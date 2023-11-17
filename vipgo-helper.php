@@ -19,7 +19,7 @@ function wpcom_vip_maintenance_mode_do_not_respond_503_for_services( $should_set
 	// Desktop checks use something like `check_http/v2.2.1 (nagios-plugins 2.2.1)`.
 	// Mobile checks use `iphone`.
 	// Utilize helper function vip_is_jetpack_request if available
-	// If the resquest is from UptimeRobot (`UptimeRobot/2.0; http://www.uptimerobot.com/`) deny the 503 header
+	// If the request is from UptimeRobot (`UptimeRobot/2.0; http://www.uptimerobot.com/`) deny the 503 header
 	// See: https://docs.wpvip.com/?p=14746#h-other-user-agents-associated-with-the-vip-platform
 	if (
 		false !== strpos( $user_agent, 'check_http' ) ||
